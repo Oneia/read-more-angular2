@@ -1,0 +1,23 @@
+{
+  "name": "read-more-directive-angular2",
+  "version": "0.0.1",
+  "description": "toogle text more\\less",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc"
+  },
+   "keywords": [
+    "angular2",
+    "read",
+    "more"
+  ],
+  "author": "Oneia",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/core": "^4.0.1",
+  },
+  "devDependencies": {
+    "typescript": "^2.2.2"
+  }
+}
