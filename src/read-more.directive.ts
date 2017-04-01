@@ -36,7 +36,7 @@ export class ReadMoreDirective implements  AfterViewInit, OnChanges {
    * @inheritDoc
    */
   public ngOnChanges() {
-    if (this.elementChange.innerHTML) {
+    if (this.text) {
       this.toggleView();
     }
   }
