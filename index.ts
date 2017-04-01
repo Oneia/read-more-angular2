@@ -1,1 +1,1 @@
-export * from "./src/read-more.directive.ts";
+export * from "./src/read-more.directive";
