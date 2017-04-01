@@ -15,7 +15,7 @@
   "author": "Oneia",
   "license": "ISC",
   "dependencies": {
-    "@angular/core": "^4.0.1",
+    "@angular/core": "^4.0.1"
   },
   "devDependencies": {
     "typescript": "^2.2.2"
