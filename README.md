@@ -11,3 +11,5 @@ Then create your button event element
 2. Set length of text that we need show by default
 3. Set element that we need cut
 4. Here is your buttons less and more u can inset whetewer but there are must be 2 elements with classes ".more" and ".less"
+
+Here you can see example https://github.com/Oneia/read-more-angular2/blob/master/example/src/app/app.component.html#L4
