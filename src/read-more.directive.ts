@@ -20,6 +20,7 @@ export class ReadMoreDirective implements  AfterViewInit, OnChanges {
    */
   public ngAfterViewInit() {
     this.text = this.elementChange.innerHTML;
+    console.log(this.elementChange ,'change')
     this.toggleView();
     if (!this.hideToggle) {
       this.el.nativeElement.classList.remove('hidden');
@@ -36,7 +37,7 @@ export class ReadMoreDirective implements  AfterViewInit, OnChanges {
    * @inheritDoc
    */
   public ngOnChanges() {
-    if (this.elementChange.innerHTML) {
+    if (this.text) {
       this.toggleView();
     }
   }
@@ -47,9 +48,11 @@ export class ReadMoreDirective implements  AfterViewInit, OnChanges {
     this.determineView();
     this.isCollapsed = !this.isCollapsed;
     if (this.isCollapsed) {
-      this.el.nativeElement.innerHTML = `Less <i class="fa fa-angle-right" aria-hidden="true"></i>` ;
+      this.el.nativeElement.querySelector('.more').style.display = "none";
+      this.el.nativeElement.querySelector('.less').style.display = "inherit";
     } else {
-      this.el.nativeElement.innerHTML = `More <i class="fa fa-angle-right" aria-hidden="true"></i>`;
+      this.el.nativeElement.querySelector('.more').style.display = "inherit";
+      this.el.nativeElement.querySelector('.less').style.display = "none";
     }
   }
 
@@ -58,6 +61,7 @@ export class ReadMoreDirective implements  AfterViewInit, OnChanges {
    */
   private determineView(): void {
     const _elementChange = document.getElementById(this.elementChange.id);
+    console.log(_elementChange)
     if (this.text.length <= this.maxLength) {
       this.currentText = this.text;
       _elementChange.innerHTML = this.currentText;
