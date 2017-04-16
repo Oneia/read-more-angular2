@@ -1,6 +1,6 @@
 {
-  "name": "read-more-directive-angular2",
-  "version": "0.0.2",
+  "name": "ngx-read-more",
+  "version": "1.0.0",
   "description": "toogle text more\\less",
   "main": "index.js",
   "scripts": {
@@ -9,13 +9,18 @@
   },
    "keywords": [
     "angular2",
+    "ngx",
+    "ng2",
+    "toogle",
+    "text",
+    "less",
     "read",
     "more"
   ],
   "author": "Oneia",
   "license": "ISC",
   "dependencies": {
-    "@angular/core": "^4.0.1"
+    "@angular/core": "^4.0.2"
   },
   "devDependencies": {
     "typescript": "^2.2.2"
