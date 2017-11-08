@@ -20,7 +20,6 @@ export class ReadMoreDirective implements  AfterViewInit, OnChanges {
    */
   public ngAfterViewInit() {
     this.text = this.elementChange.innerHTML;
-    console.log(this.elementChange ,'change')
     this.toggleView();
     if (!this.hideToggle) {
       this.el.nativeElement.classList.remove('hidden');
@@ -61,7 +60,6 @@ export class ReadMoreDirective implements  AfterViewInit, OnChanges {
    */
   private determineView(): void {
     const _elementChange = document.getElementById(this.elementChange.id);
-    console.log(_elementChange)
     if (this.text.length <= this.maxLength) {
       this.currentText = this.text;
       _elementChange.innerHTML = this.currentText;
